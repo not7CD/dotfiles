@@ -1,0 +1,12 @@
+#include ".xrecources/gruvbox-urxvt256.xresources"
+#include ".xrecources/gruvbox-dark.xresources"
+
+! Set the font
+URxvt*font: xft:DejaVu Sans Mono for Powerline:pixelsize=12:antialias=true
+URxvt*boldFont: xft:DejaVu Sans Mono for Powerline:pixelsize=12:antialias=true
+
+! Disable scrollbar
+URxvt.scrollBar: false
+
+! Set terminal padding
+URxvt.internalBorder: 15
