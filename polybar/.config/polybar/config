@@ -70,7 +70,7 @@ font-2 = Material Design Icons:size=13;0
 
 modules-left = i3
 modules-center = mpd
-modules-right = volume wlan battery backlight date
+modules-right = wlan volume  battery backlight date
 
 
 [module/rofi]
@@ -78,8 +78,7 @@ type = custom/text
 
 content = 
 content-padding = 2
-click-left = rofi -show run
-
+; click-left = rofi -show run
 [module/i3]
 type = internal/i3
 format = <label-state> <label-mode>
@@ -128,9 +127,9 @@ interface = wlp6s0
 interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
-label-connected = %essid%
-label-disconnected = %ifname% disconnected
-ramp-signal-0 = 
+label-connected = 
+label-disconnected = 
+ramp-signal-0 = 
 
 [module/date]
 type = internal/date
@@ -146,11 +145,17 @@ format-padding = 1
 type = internal/battery
 battery = BAT0
 adapter = AC
-full-at = 100
+full-at = 99
+
+; TODO: WHY DOESNT IT WORK
+click-left = notify-send -t 100 "test"
+; click-left = $(notify-send -t 200 -u low "$(acpi)")
+; click-left = notify-send -t 200 -u low "$(acpi)"
 
 format-charging = <ramp-capacity>  <label-charging>
 format-discharging = <ramp-capacity>  <label-discharging>
 format-full = <label-full> 
+
 
 label-charging =
 label-discharging=

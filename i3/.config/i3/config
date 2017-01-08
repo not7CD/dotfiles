@@ -54,10 +54,10 @@ for_window [class=".*"] title_format "<span font='DejaVu Sans Mono 10'>  %title<
 
 
 #                       border              background         text                 indicator
-client.focused          $dark0_hard         $dark0_hard        $light0_hard         $dark2
-client.unfocused        $dark0              $dark0             $light0              $dark2
-client.focused_inactive $dark0              $dark0             $light0              $dark2
-client.urgent           $neutral_orange     $neutral_orange    $light0_hard         $dark2
+client.focused          $dark0_hard         $dark0_hard        $light4               $dark2
+client.unfocused        $dark0              $dark0             $light4               $dark2
+client.focused_inactive $dark0              $dark0             $light4               $dark2
+client.urgent           $neutral_orange     $neutral_orange    $light4               $dark2
 
 
 ### KEY BINDINGS ###
@@ -225,10 +225,10 @@ assign [class="Minecraft"] 8
 assign [class="Steam"] 8
 assign [title="Steam"] 8
 #not working
-assign [class="Spotify"] 0
-assign [title="Spotify"] 0
+assign [class="Spotify"] 10
+assign [title="Spotify"] 10
 
 
 
-exec --no-startup-id i3-msg 'workspace 1; exec atom'
-exec --no-startup-id i3-msg 'workspace 0; exec spotify'
+exec --no-startup-id i3-msg 'workspace 2; exec atom'
+exec --no-startup-id i3-msg 'workspace 10; exec spotify'
