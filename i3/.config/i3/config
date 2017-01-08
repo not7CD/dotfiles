@@ -210,19 +210,25 @@ bindsym XF86AudioPrev exec playerctl previous
       #  status_command i3status
 #}
 
-assign [class="discord"] 9
-assign [class="Spotify"] 0
-assign [title="Spotify"] 0
-assign [class="net-minecraft-launcher-Main"] 8
-assign [class="Minecraft"] 8
-assign [class="steam"] 8
-assign [title="Steam"] 8
-
-
-
-
-
+### NECESARY
 # Lanuch Polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-
+# Set wp
 exec --no-startup-id feh --bg-scale $HOME/Pictures/Wallpapers
+
+
+assign [class="discord"] 9
+
+assign [class="net-minecraft-launcher-Main"] 8
+assign [class="Minecraft"] 8
+
+assign [class="Steam"] 8
+assign [title="Steam"] 8
+#not working
+assign [class="Spotify"] 0
+assign [title="Spotify"] 0
+
+
+
+exec --no-startup-id i3-msg 'workspace 1; exec atom'
+exec --no-startup-id i3-msg 'workspace 0; exec spotify'
