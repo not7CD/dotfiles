@@ -70,7 +70,7 @@ font-2 = Material Design Icons:size=13;0
 
 modules-left = i3
 modules-center = mpd
-modules-right = wlan volume  battery backlight date
+modules-right = wlan volume  battery backlight date time
 
 
 [module/rofi]
@@ -126,20 +126,35 @@ type = internal/network
 interface = wlp6s0
 interval = 3.0
 
-format-connected = <ramp-signal> <label-connected>
-label-connected = 
+format-connected-padding = 1
+format-disconnected-padding = 1
+
+format-connected = <label-connected>
+label-connected = 
 label-disconnected = 
-ramp-signal-0 = 
+; no support for multiple wifi levels from material font
+; ramp-signal-0 = 
 
 [module/date]
 type = internal/date
-date =  %A, %b. %d  %H:%M
-time = %H:%M
+date-alt =  %A, %b. %d
+date =  %Y-%m-%d
 interval = 5
 format-font =3
 format-background = ${colors.dark2}
 format-foreground = ${colors.light2}
 format-padding = 1
+
+[module/time]
+type = internal/date
+label = %time%
+time = %H:%M
+time-alt =  %H:%M
+interval = 5
+format-font =3
+format-background = ${colors.dark4}
+format-foreground = ${colors.light0}
+format-padding = 2
 
 [module/battery]
 type = internal/battery
@@ -165,12 +180,15 @@ format-charging-padding = 1
 format-discharging-padding = 1
 format-full-padding = 1
 
-ramp-capacity-0 = 
-ramp-capacity-0-foreground = ${colors.neutral_red}
-ramp-capacity-1 = 
+; low warning (around 30%)
+ramp-capacity-0-foreground = ${colors.dark0}
+ramp-capacity-0-background = ${colors.neutral_red}
 ramp-capacity-1-foreground = ${colors.neutral_orange}
-ramp-capacity-2 = 
 ramp-capacity-2-foreground = ${colors.neutral_yellow}
+
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
 ramp-capacity-3 = 
 ramp-capacity-4 = 
 ramp-capacity-5 = 
