@@ -49,12 +49,16 @@ set $faded_orange     #af3a03
 # We first set the titlebar font size to a large size to get a good padding amount.
 # We then use pango markup to force i3 to print with the desired font.
 # This gives us large titlebars with a small font. :P
-font pango:DejaVu Sans Mono 16
-for_window [class=".*"] title_format "<span font='DejaVu Sans Mono 10'>  %title</span>"
+font pango:DejaVu Sans Mono 10
+# for_window [class=".*"] title_format "<span font='DejaVu Sans Mono 10'>  %title</span>"
+
+new_window pixel 4
+floating_minimum_size 75 x 50
+floating_maximum_size 800 x 600
 
 
 #                       border              background         text                 indicator
-client.focused          $dark0_hard         $dark0_hard        $light4               $dark2
+client.focused          $dark0_soft         $dark0_soft        $light4               $dark2
 client.unfocused        $dark0              $dark0             $light4               $dark2
 client.focused_inactive $dark0              $dark0             $light4               $dark2
 client.urgent           $neutral_orange     $neutral_orange    $light4               $dark2

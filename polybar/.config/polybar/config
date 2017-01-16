@@ -69,8 +69,13 @@ font-1 = SourceSansPro:size=10;0
 font-2 = Material Design Icons:size=13;0
 
 modules-left = i3
-modules-center = mpd
+modules-center = mpd title
 modules-right = wlan volume  battery backlight date time
+
+[module/title]
+type = internal/xwindow
+format-padding = 2
+format-background = ${colors.dark0_soft}
 
 
 [module/rofi]
