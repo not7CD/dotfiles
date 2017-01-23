@@ -3,6 +3,7 @@
 #include ".xrecources/gruvbox-urxvt256.xresources"
 
 ! Set the font
+
 URxvt*font: xft:DejaVu Sans Mono for Powerline:pixelsize=12:antialias=true
 URxvt*boldFont: xft:DejaVu Sans Mono for Powerline:pixelsize=12:antialias=true
 

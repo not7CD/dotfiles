@@ -58,10 +58,10 @@ floating_maximum_size 800 x 600
 
 
 #                       border              background         text                 indicator
-client.focused          $dark0_soft         $dark0_soft        $light4               $dark2
-client.unfocused        $dark0              $dark0             $light4               $dark2
-client.focused_inactive $dark0              $dark0             $light4               $dark2
-client.urgent           $neutral_orange     $neutral_orange    $light4               $dark2
+client.focused          $dark0_soft         $dark0_soft        $dark0_soft               $dark2
+client.unfocused        $dark0              $dark0             $dark0               $dark2
+client.focused_inactive $dark0              $dark0             $dark0               $dark2
+client.urgent           $neutral_orange     $neutral_orange    $neutral_orange               $dark2
 
 
 ### KEY BINDINGS ###
@@ -232,6 +232,8 @@ assign [class="Minecraft"] 8
 assign [class="Steam"] 8
 # some steam popups dont have class
 assign [title="Steam"] 8
+
+assign [class="Nylas N1"] 7
 
 # ???
 for_window [class="Spotify"] move to workspace 10
