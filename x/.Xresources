@@ -4,8 +4,9 @@
 
 ! Set the font
 
-URxvt*font: xft:DejaVu Sans Mono for Powerline:pixelsize=12:antialias=true
-URxvt*boldFont: xft:DejaVu Sans Mono for Powerline:pixelsize=12:antialias=true
+URxvt*font: xft:xos4 Terminess Powerline:pixelsize=10:antialias=false
+URxvt*boldFont: xft:xos4 Terminess Powerline:pixelsize=10:antialias=false
+! xft:DejaVu Sans Mono for Powerline:pixelsize=12:antialias=true
 
 ! Disable scrollbar
 URxvt.scrollBar: false
