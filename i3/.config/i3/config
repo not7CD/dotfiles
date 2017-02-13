@@ -183,6 +183,11 @@ mode $resize {
         bindsym Up resize shrink height 5 px or 5 ppt
         bindsym Right resize grow width 5 px or 5 ppt
 
+        bindsym Ctrl+Left resize shrink width 1 px or 1 ppt
+        bindsym Ctrl+Down resize grow height 1 px or 1 ppt
+        bindsym Ctrl+Up resize shrink height 1 px or 1 ppt
+        bindsym Ctrl+Right resize grow width 1 px or 1 ppt
+
         # back to normal: Enter or Escape
         bindsym Return mode "default"
         bindsym Escape mode "default"
@@ -191,12 +196,12 @@ mode $resize {
 bindsym $mod+r mode $resize
 
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 1 +5% #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 1 -5% #decrease sound volume
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 1 toggle # mute sound
+bindsym XF86AudioRaiseVolume  exec --no-startup-id pulseaudio-ctl up    #increase sound volume
+bindsym XF86AudioLowerVolume  exec --no-startup-id pulseaudio-ctl down  #decrease sound volume
+bindsym XF86AudioMute         exec --no-startup-id pulseaudio-ctl mute  #mute sound
 
 # Sreen brightness controls
-bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
+bindsym XF86MonBrightnessUp   exec xbacklight -inc 10 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightness
 
 # Touchpad controls
