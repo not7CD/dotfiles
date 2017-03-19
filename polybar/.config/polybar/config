@@ -66,8 +66,8 @@ padding-right = 0
 module-margin-left = 0
 module-margin-right = 0
 
-font-0 = xos4 Terminess Powerline
-;font-0 = Consolas for Powerline:size=8;0
+;font-0 = xos4 Terminess Powerline
+font-0 = DejaVu Sans Mono:size=8;0
 font-1 = SourceSansPro:size=10;0
 font-2 = Material Design Icons:size=10;0
 
