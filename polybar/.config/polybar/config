@@ -67,7 +67,7 @@ module-margin-left = 0
 module-margin-right = 0
 
 ;font-0 = xos4 Terminess Powerline
-font-0 = DejaVu Sans Mono:size=8;0
+font-0 = Iosevka:size=10;0
 font-1 = SourceSansPro:size=10;0
 font-2 = Material Design Icons:size=10;0
 
@@ -198,16 +198,16 @@ click-left = notify-send -t 100 "test"
 ; click-left = notify-send -t 200 -u low "$(acpi)"
 
 format-charging = <ramp-capacity>  <label-charging>
-format-discharging = <ramp-capacity>  <label-discharging>
+format-discharging = <ramp-capacity> <label-discharging>
 format-full = <label-full> 
 
 
 label-charging =
-label-discharging=
+label-discharging =
 label-full = 
 
 format-charging-padding = 1
-format-discharging-padding = 1
+format-discharging-padding = 0
 format-full-padding = 1
 
 ; low warning (around 30%)

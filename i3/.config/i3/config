@@ -226,6 +226,8 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec --no-startup-id feh --bg-scale $HOME/Pictures/Wallpapers
 
 ### WORKSPACE ASSIGN
+assign [class="Vivaldi"] 1
+
 assign [class="Atom"] 2
 
 # Still messed up. Unpredictable behaviours.
@@ -245,3 +247,5 @@ for_window [class="Spotify"] move to workspace 10
 
 exec atom
 exec spotify
+exec vivaldi-stable
+exec auto-xflux
