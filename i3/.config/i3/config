@@ -219,7 +219,7 @@ bindsym XF86AudioPrev exec playerctl previous
       #  status_command i3status
 #}
 
-### NECESARY
+### NECESSARY
 # Lanuch Polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 # Set wp
@@ -227,6 +227,7 @@ exec --no-startup-id feh --bg-scale $HOME/Pictures/Wallpapers
 
 ### WORKSPACE ASSIGN
 assign [class="Vivaldi"] 1
+assign [class="Chromium"] 1
 
 assign [class="Atom"] 2
 
@@ -241,11 +242,13 @@ assign [class="Steam"] 8
 assign [title="Steam"] 8
 
 assign [class="Nylas N1"] 7
+assign [class="Geary"] 7
+
+assign [class="feh"] 3
 
 # ???
 for_window [class="Spotify"] move to workspace 10
 
 exec atom
 exec spotify
-exec vivaldi-stable
 exec auto-xflux

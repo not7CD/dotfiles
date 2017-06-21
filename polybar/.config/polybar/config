@@ -79,7 +79,7 @@ modules-right = lan wlan volume  battery backlight date time
 type = internal/xwindow
 format-padding = 4
 format-background = ${colors.dark0_soft}
-label-maxlen = 70
+label-maxlen = 60
 
 
 [module/rofi]
