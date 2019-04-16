@@ -1,5 +1,0 @@
-audio.sources=pulse
-
-visualizer.spectrum.bar.width=1
-
-colors.scheme=gruv
