@@ -1,3 +1,17 @@
 - clean: []
 - link: {}
 - shell: []
+- clean: ['~']
+
+- link:
+    ~/.profile: profile
+    ~/.bashrc: bashrc
+    ~/.bash_logout: bash_logout
+    ~/.gitconfig: gitconfig
+    ~/.zprofile: zprofile
+    ~/.zshrc: zshrc
+    ~/.config/i3:
+        path: config/i3/
+        create: true
+
+
