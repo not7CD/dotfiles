@@ -1,6 +1,8 @@
 [submodule "dotbot"]
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
+	shallow = true
 [submodule "spaceship-prompt"]
 	path = spaceship-prompt
 	url = git@github.com:denysdovhan/spaceship-prompt.git
+	shallow = true
