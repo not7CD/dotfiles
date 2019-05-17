@@ -14,6 +14,9 @@
         path: i3/
         create: true
     ~/.Xresources: Xresources
+    ~/.zfunctions/prompt_spaceship_setup:
+        create: true 
+        path: spaceship-prompt/spaceship.zsh
 
 
 

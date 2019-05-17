@@ -13,8 +13,11 @@ zstyle :compinstall filename '/home/not7cd/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
+
+fpath=( "$HOME/.zfunctions" $fpath )
+
 autoload -Uz promptinit
 promptinit
-prompt pws
+prompt spaceship
 
 
