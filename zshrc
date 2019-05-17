@@ -14,6 +14,8 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+eval "$(pipenv --completion)"
+
 fpath=( "$HOME/.zfunctions" $fpath )
 
 autoload -Uz promptinit
