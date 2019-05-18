@@ -1,3 +1,6 @@
+
+zmodload zsh/zprof
+
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
 HISTSIZE=1000
@@ -16,10 +19,19 @@ compinit
 
 eval "$(pipenv --completion)"
 
+pyenv() {
+    eval "$( command pyenv init - )"
+    pyenv "$@"
+}
+
 fpath=( "$HOME/.zfunctions" $fpath )
 
 autoload -Uz promptinit
 promptinit
 prompt spaceship
 
+if [[ -r ~/.aliasrc ]]; then
+  . ~/.aliasrc
+fi
 
+zprof
