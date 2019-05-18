@@ -127,5 +127,3 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
 echo "sleep 1" >> .bashrc
-sleep 1
-sleep 1

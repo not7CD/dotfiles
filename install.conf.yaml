@@ -10,7 +10,8 @@
     ~/.gitconfig: gitconfig
     ~/.zprofile: zprofile
     ~/.zshrc: zshrc
-    ~/.config/i3:
+    ~/.aliasrc: aliasrc
+    ~/.config/i3/:
         path: i3/
         create: true
     ~/.Xresources: Xresources
