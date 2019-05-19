@@ -11,8 +11,8 @@
     ~/.zprofile: zprofile
     ~/.zshrc: zshrc
     ~/.aliasrc: aliasrc
-    ~/.config/i3/:
-        path: i3/
+    ~/.config/i3:
+        path: i3
         create: true
     ~/.Xresources: Xresources
     ~/.zfunctions/prompt_spaceship_setup:

@@ -1,5 +1,5 @@
 
-zmodload zsh/zprof
+# zmodload zsh/zprof
 
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
@@ -48,7 +48,7 @@ SPACESHIP_PROMPT_ORDER=(
 #  aws           # Amazon Web Services section
   venv          # virtualenv section
 #  conda         # conda virtualenv section
-  pyenv         # Pyenv section
+#  pyenv         # Pyenv section
 #  dotnet        # .NET section
 #  ember         # Ember.js section
   kubecontext   # Kubectl context section
@@ -70,4 +70,4 @@ if [[ -r ~/.aliasrc ]]; then
   . ~/.aliasrc
 fi
 
-zprof
+# zprof
