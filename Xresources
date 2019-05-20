@@ -40,7 +40,7 @@
 #include "gruvbox-contrib/xresources/gruvbox-dark.xresources"
 
 !! URxvt Appearance
-*.font: xft:Iosevka:style=Regular:size=12
+*.font: xft:Iosevka:style=Regular:size=12:antialias=true:hinting=true
 *.boldFont: xft:Iosevka:style=Bold:size=12
 *.italicFont: xft:Iosevka:style=Italic:size=12
 *.boldItalicFont: xft:Iosevka:style=Bold Italic:size=12

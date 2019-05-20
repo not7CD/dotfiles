@@ -13,3 +13,4 @@
 [submodule "gruvbox-contrib"]
 	path = gruvbox-contrib
 	url = git@github.com:morhetz/gruvbox-contrib.git
+	shallow = true
