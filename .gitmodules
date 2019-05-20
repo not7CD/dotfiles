@@ -6,3 +6,10 @@
 	path = spaceship-prompt
 	url = git@github.com:denysdovhan/spaceship-prompt.git
 	shallow = true
+[submodule "pyenv"]
+	path = pyenv
+	url = git@github.com:pyenv/pyenv.git
+	shallow = true
+[submodule "gruvbox-contrib"]
+	path = gruvbox-contrib
+	url = git@github.com:morhetz/gruvbox-contrib.git
