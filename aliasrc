@@ -1,1 +1,2 @@
 alias l='exa -la'
+alias ppe='pipenv'

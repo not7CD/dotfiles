@@ -17,12 +17,13 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-eval "$(pipenv --completion)"
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
 
-pyenv() {
-    eval "$( command pyenv init - )"
-    pyenv "$@"
-}
+eval "$( command pyenv init - )"
+eval "$(pipenv --completion)"
+# eval "$PYENV_ROOT/completions/pyenv.zsh"
+
 
 fpath=( "$HOME/.zfunctions" $fpath )
 
