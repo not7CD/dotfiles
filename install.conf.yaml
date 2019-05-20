@@ -4,9 +4,6 @@
 - clean: ['~']
 
 - link:
-    ~/.profile: profile
-    ~/.bashrc: bashrc
-    ~/.bash_logout: bash_logout
     ~/.gitconfig: gitconfig
     ~/.zprofile: zprofile
     ~/.zshrc: zshrc
@@ -18,6 +15,5 @@
     ~/.zfunctions/prompt_spaceship_setup:
         create: true 
         path: spaceship-prompt/spaceship.zsh
-
-
+    ~/.pyenv: pyenv
 
