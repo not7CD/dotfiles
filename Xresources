@@ -37,6 +37,8 @@
 *.color7: #bfbaac
 *.color15: #fdf6e3
 
+#include "gruvbox-contrib/xresources/gruvbox-dark.xresources"
+
 !! URxvt Appearance
 *.font: xft:Iosevka:style=Regular:size=12
 *.boldFont: xft:Iosevka:style=Bold:size=12
