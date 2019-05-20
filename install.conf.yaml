@@ -8,6 +8,7 @@
     ~/.zprofile: zprofile
     ~/.zshrc: zshrc
     ~/.aliasrc: aliasrc
+    ~/.vimrc: vimrc
     ~/.config/i3:
         path: i3
         create: true

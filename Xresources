@@ -13,7 +13,7 @@
 #define font2 PowerlineSymbols
 #define font_size 12
 
-Rxvt*.font: xft:font1:style=Regular:size=12, xft:font2:size=12:minspace=false
+Rxvt*.font: xft:font1:style=Regular:size=12
 Rxvt*.boldFont: xft:font1:style=Bold:size=12
 Rxvt*.italicFont: xft:font1:style=Italic:size=12
 Rxvt*.boldItalicFont: xft:font1:style=Bold Italic:size=12
