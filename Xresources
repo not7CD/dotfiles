@@ -5,7 +5,7 @@
 *.background: #141c21
 *.cursorColor: #afbfbf
 
-#include "gruvbox-contrib/xresources/gruvbox-dark.xresources"
+#include ".dotfiles/gruvbox-contrib/xresources/gruvbox-dark.xresources"
 
 !! URxvt Appearance
 
