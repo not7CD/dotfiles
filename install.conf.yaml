@@ -17,4 +17,5 @@
         create: true 
         path: spaceship-prompt/spaceship.zsh
     ~/.pyenv: pyenv
+    ~/.tmux.conf: tmux
 
