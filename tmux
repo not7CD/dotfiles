@@ -1,4 +1,6 @@
 set -g mouse on # scrolling
+bind -n WheelUpPane copy-mode
+bind -t vi-copy y copy-pipe "xclip -sel clip -i"
 
 ##COLORSCHEME: gruvbox dark
 set-option -g status "on"
