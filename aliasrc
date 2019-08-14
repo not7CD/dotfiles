@@ -1,8 +1,11 @@
-alias l='exa -la'
+alias ll='exa -la'
 alias ppe='pipenv'
 
-alias gs='git status'
+alias gs='git status -s'
 alias ga='git add'
 alias gb='git branch'
 alias gc='git commit'
 alias go='git checkout'
+alias gl='git log --oneline'
+
+alias k='kubectl'
