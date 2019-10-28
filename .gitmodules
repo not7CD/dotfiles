@@ -14,3 +14,6 @@
 	path = gruvbox-contrib
 	url = git@github.com:morhetz/gruvbox-contrib.git
 	shallow = true
+[submodule "zplug"]
+	path = zplug
+	url = https://github.com/zplug/zplug.git

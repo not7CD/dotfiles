@@ -13,7 +13,9 @@ endif
 call plug#begin('~/.vim/plugged')
 Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
+
 Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-fugitive'
 
 Plug 'martinda/Jenkinsfile-vim-syntax'
 Plug 'nathangrigg/vim-beancount'

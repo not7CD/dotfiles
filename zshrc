@@ -1,5 +1,14 @@
+# TODO: debug instant prompt
 
-# zmodload zsh/zprof
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block, everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+
+#zmodload zsh/zprof
 
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
@@ -15,6 +24,8 @@ bindkey -e
 
 zstyle ':completion:*' completer _complete _ignored _approximate
 zstyle :compinstall filename '/home/not7cd/.zshrc'
+
+fpath=($HOME/.zsh/completion $fpath)
 
 autoload -Uz compinit
 compinit
@@ -79,53 +90,27 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 
 eval "$( command pyenv init - )"
 eval "$(pipenv --completion)"
+# if [ $commands[kubectl] ]; then source <(kubectl completion zsh); fi
 # eval "$PYENV_ROOT/completions/pyenv.zsh"
-
 
 fpath=( "$HOME/.zfunctions" $fpath )
 
-SPACESHIP_PROMPT_ORDER=(
-  time          # Time stamps section
-  user          # Username section
-  dir           # Current directory section
-  host          # Hostname section
-  git           # Git section (git_branch + git_status)
-#  hg            # Mercurial section (hg_branch  + hg_status)
-  package       # Package version
-#  node          # Node.js section
-#  ruby          # Ruby section
-#  elixir        # Elixir section
-#  xcode         # Xcode section
-#  swift         # Swift section
-  golang        # Go section
-#  php           # PHP section
-  rust          # Rust section
-  haskell       # Haskell Stack section
-  julia         # Julia section
-  docker        # Docker section
-#  aws           # Amazon Web Services section
-  venv          # virtualenv section
-#  conda         # conda virtualenv section
-#  pyenv         # Pyenv section
-#  dotnet        # .NET section
-#  ember         # Ember.js section
-  kubecontext   # Kubectl context section
-  terraform     # Terraform workspace section
-  exec_time     # Execution time
-  line_sep      # Line break
-#  battery       # Battery level and status
-  vi_mode       # Vi-mode indicator
-  jobs          # Background jobs indicator
-  exit_code     # Exit code section
-  char          # Prompt character
-)
+export ZPLUG_HOME=~/.dotfiles/zplug
+source $ZPLUG_HOME/init.zsh
 
-autoload -Uz promptinit
-promptinit
-prompt spaceship
+zplug romkatv/powerlevel10k, as:theme, depth:1
+
+zplug load
+
+#autoload -Uz promptinit
+#promptinit
+#prompt agnoster
 
 if [[ -r ~/.aliasrc ]]; then
   . ~/.aliasrc
 fi
 
-# zprof
+#zprof
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

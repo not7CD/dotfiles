@@ -18,4 +18,5 @@
         path: spaceship-prompt/spaceship.zsh
     ~/.pyenv: pyenv
     ~/.tmux.conf: tmux
+    ~/.p10k.zsh: p10k.zsh
 
