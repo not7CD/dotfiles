@@ -4,14 +4,13 @@
 - clean: ['~']
 
 - link:
-    ~/.gitconfig: gitconfig
     ~/.zprofile: zprofile
     ~/.zshrc: zshrc
     ~/.aliasrc: aliasrc
     ~/.vimrc: vimrc
-    ~/.config/i3:
-        path: i3
-        create: true
+    ~/.config/:
+        glob: true
+        path: config/*
     ~/.Xresources: Xresources
     ~/.zfunctions/prompt_spaceship_setup:
         create: true 
@@ -19,4 +18,7 @@
     ~/.pyenv: pyenv
     ~/.tmux.conf: tmux
     ~/.p10k.zsh: p10k.zsh
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
 
