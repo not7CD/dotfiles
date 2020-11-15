@@ -9,3 +9,5 @@ alias go='git checkout'
 alias gl='git log --oneline'
 
 alias k='kubectl'
+
+alias vim='nvim'
